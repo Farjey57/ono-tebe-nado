@@ -45,5 +45,67 @@
 }
 
 .cover {
-  background-image: url(/images/cover.jpg);
+  height: 757px;
+  padding: 165px 50px 50px;
+  /* Наложение двух фонов друг на друга, первый в списке - самый верхний. linear-gradient - позволяет использовать наложение просто цвета*/
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(/images/cover.jpg) center/cover;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 30px;
+  line-height: 1.15;
+}
+
+.aligned-text_center {
+  text-align: center;
+  margin-left: -60px;
+}
+
+.aligned-text_right {
+  text-align: right;
+  line-height: 1;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  margin-top: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  margin-left: 28px;
+  font-size: 22px;
+  line-height: 1.27;
+  word-spacing: 24px;
+}
+
+.bet-button {
+  cursor: pointer;
+  padding: 12px 32px;
+  background: transparent;
+  border: 1px solid #FFF;
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 22px;
+  text-align: center;
+  
+  
 }
