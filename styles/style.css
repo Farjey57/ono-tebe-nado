@@ -1,1 +1,49 @@
-/* место для вашего кода */
+/* Переменные */
+
+:root {
+  --black: #000;
+  --white: #FFF;
+}
+
+.header {
+  padding: 92px 52px 96px;
+  display: grid;
+  grid-template: min-content/1fr min-content 1fr;
+  font-size: 18px;
+  color: var(--black);
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__links-list {
+  display: flex;
+  list-style: circle;
+  column-gap: 25px;
+  letter-spacing: 0.18px;
+}
+
+.header__links-list-item:nth-child(1) {
+  list-style: none;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  width: fit-content;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.52;
+  letter-spacing: 0.18px;
+  font-style: normal;
+}
+
+.cover {
+  background-image: url(/images/cover.jpg);
+}
