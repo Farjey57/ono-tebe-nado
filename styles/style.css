@@ -106,6 +106,48 @@
   color: var(--white);
   font-size: 22px;
   text-align: center;
-  
-  
+}
+
+/* Секция lots*/
+
+.lots {
+  margin-top: 179px;
+  padding: 0 24px;
+}
+
+.lots__heading {
+  font-size: 40px;
+}
+
+.lots__card-list {
+  display: grid;
+  grid-template: 563px/repeat(3, 1fr);
+  gap: 25px;
+  list-style: none;
+}
+
+.lots__card-list-item {
+  flex-grow: 1;
+}
+
+.card {
+  color: var(--white);
+}
+
+.card_type_film {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(/images/card-lot-01.jpg) center/cover;
+}
+
+.card_type_book {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(/images/card-lot-02.jpg) center/cover;
+}
+
+.card_type_picture {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(/images/card-lot-03.jpg) center/cover;
 }
