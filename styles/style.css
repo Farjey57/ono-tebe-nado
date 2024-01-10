@@ -29,7 +29,12 @@
   list-style: none;
 }
 
+.header__logo-link {
+  align-self: center;
+}
+
 .header__logo-image {
+  display: block;
   width: 148px;
   height: 105px;
 }
@@ -112,7 +117,7 @@
 
 .lots {
   margin-top: 179px;
-  padding: 0 24px;
+  padding: 0 24px 3px;
 }
 
 .lots__heading {
@@ -127,8 +132,18 @@
 }
 
 .lots__card-list-item {
-  flex-grow: 1;
+  display: flex;
 }
+
+.lots__look-more-link {
+  display: block;
+  font-size: 20px;
+  text-underline-position: under;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+/* Карточка-лот */
 
 .card {
   color: var(--white);
@@ -150,4 +165,35 @@
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
     url(/images/card-lot-03.jpg) center/cover;
+}
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 51px 40px 48px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.card__title {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 20px;
+}
+
+/* Секция about*/
+
+.about {
+  display: grid;
+  grid-template: min-content/repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 148px;
+  padding: 0 24px;
 }
