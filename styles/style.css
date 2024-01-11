@@ -6,7 +6,7 @@
 }
 
 .header {
-  padding: 92px 52px 96px;
+  padding: 92px 52px 94px;
   display: grid;
   grid-template: min-content/1fr min-content 1fr;
   font-size: 18px;
@@ -21,7 +21,7 @@
 .header__links-list {
   display: flex;
   list-style: circle;
-  column-gap: 35px;
+  column-gap: 30px;
   letter-spacing: 0.18px;
 }
 
@@ -64,7 +64,7 @@
   /* Наложение двух фонов друг на друга, первый в списке - самый верхний. linear-gradient - позволяет использовать наложение просто цвета*/
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url(/images/cover.jpg) center/cover;
+    url(../images/cover.jpg) center/cover;
   color: var(--white);
   text-transform: uppercase;
 }
@@ -131,6 +131,10 @@
 
 .lots__heading {
   font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: 40px;
+  margin-bottom: 27px;
 }
 
 .lots__card-list {
@@ -161,19 +165,19 @@
 .card_type_film {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url(/images/card-lot-01.jpg) center/cover;
+    url(../images/card-lot-01.jpg) center/cover;
 }
 
 .card_type_book {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url(/images/card-lot-02.jpg) center/cover;
+    url(../images/card-lot-02.jpg) center/cover;
 }
 
 .card_type_picture {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url(/images/card-lot-03.jpg) center/cover;
+    url(../images/card-lot-03.jpg) center/cover;
 }
 
 .card-link {
