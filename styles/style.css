@@ -76,7 +76,6 @@
 /* Секция cover */
 
 .cover {
-  height: 757px;
   padding: 170px 50px 50px;
 
   /* Наложение двух фонов друг на друга, первый в списке - самый верхний. linear-gradient - позволяет использовать наложение просто цвета*/
@@ -150,6 +149,7 @@
   color: var(--white);
   font-size: 22px;
   text-align: center;
+  font-family: inherit;
 }
 
 /* Секция lots*/
@@ -169,13 +169,14 @@
 
 .lots__card-list {
   display: grid;
-  grid-template: 563px/repeat(3, 1fr);
+  grid-template: min-content/repeat(3, 1fr);
   gap: 25px;
   list-style: none;
 }
 
 .lots__card-list-item {
   display: flex;
+  min-height: 563px;
 }
 
 .lots__look-more-link {
@@ -211,12 +212,17 @@
 }
 
 .card-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
   padding: 51px 40px 48px;
   line-height: 1.2;
   text-decoration: none;
+}
+
+.card__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__title {
