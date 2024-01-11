@@ -32,6 +32,9 @@
 }
 
 .header__link {
+
+  /*Задаем линии подчеркивания позицию под шрифтом*/
+
   text-underline-position: under;
 }
 
@@ -44,6 +47,9 @@
 }
 
 .header__logo-image {
+
+  /* Блок чтобы убрать непредсказуемые отступы */
+
   display: block;
   width: 148px;
   height: 105px;
@@ -58,21 +64,23 @@
 .address {
   width: max-content;
   display: flex;
-  flex-direction: column;
-  font-style: normal;
-  line-height: 1.34;
-  letter-spacing: 0.18px;
-  text-underline-position: under;
   margin-right: 34px;
   margin-left: auto;
+  flex-direction: column;
+  font-style: normal;
+  text-underline-position: under;
+  line-height: 1.34;
+  letter-spacing: 0.18px;
 }
 
 /* Секция cover */
 
 .cover {
   height: 757px;
-  padding: 165px 50px 50px;
+  padding: 170px 50px 50px;
+
   /* Наложение двух фонов друг на друга, первый в списке - самый верхний. linear-gradient - позволяет использовать наложение просто цвета*/
+
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
     url(../images/cover.jpg) center/cover;
@@ -87,24 +95,35 @@
   font-size: 100px;
   font-weight: bold;
   letter-spacing: 30px;
-  line-height: 1.1;
+  line-height: 1.07;
 }
 
 .aligned-text_center {
+
+  /* Выравнивание второго слова */
+
   text-align: center;
   margin-left: -60px;
 }
 
 .aligned-text_right {
+
+  /* Выравнивание третьего слова */
+
   text-align: right;
   line-height: 1;
 }
 
 .letter-spacing-extended {
+
+  /* Для буквы "н" */
+  
   letter-spacing: 60px;
 }
 
 .no-letter-spacing {
+  /* Для букв в конце слов */
+
   letter-spacing: 0;
 }
 
@@ -252,6 +271,9 @@
   flex-direction: column;
   row-gap: 24px;
   padding-right: 5px;
+}
+
+.about__text {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
